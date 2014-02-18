@@ -1,0 +1,240 @@
+html, body {
+	height: 100%;
+	background: #ffffff;
+	font-family: "Verdana", sans-serif;
+	font-weight: normal;
+}
+
+div#canvas {
+	height: auto;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+h2 {
+	font-size: 60px;
+	font-weight: 400;
+	color: #494b51;
+}
+
+/***************** HEADER ********************/
+
+div#header {
+	position: relative;
+	height: 184px;
+	width: 100%;
+	/*border: solid 1px red;*/
+}
+
+
+#header a#site-title {
+	position: relative;
+	display: block;
+	padding-top: 38px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+#header ul#nav {
+	position: relative;
+	width: 100%;
+	height: 38px;
+	background: #d32929;
+	
+	text-align: center;
+}
+
+#header ul#nav li {
+	position: relative;
+	display: inline;
+	
+	font-family: "ZapfHumnstBTBold", "Verdana", sans-serif;
+	font-size: 14px;
+	height: 46px;
+	padding-left: 35px;
+	padding-right: 35px;
+	
+	line-height: 38px;
+	color: white;
+}
+
+#header ul#nav li:hover {
+	color: #dddddd;
+}
+
+#header ul#nav li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*Active Navigation Links Based on Body ID*/
+body#market li#market a {font-size: 18px; color: white;}
+body#catering li#catering a {font-size: 18px; color: white;}	
+body#about li#about a {font-size: 18px; color: white;}
+body#contact li#contact a {font-size: 18px; color: white;}				
+
+
+/***************** CONTENT ********************/
+
+div#content {
+	position: relative;
+	margin: 50px auto 0;
+	width: 960px;
+	padding-left: 20px;
+	padding-right: 20px; /*floating menu items already have margin-right of 50px*/
+	overflow: hidden;
+	/*border: solid 1px green;*/
+}
+
+/***************** MENUS ********************/
+
+div#menu ul {
+	position: relative;
+	top: -50px; /*to offset #content margin-top */
+	left: 30px; /*to center the menu in the #content area */
+}
+
+div#menu ul li {
+	position: relative;
+	float: left;
+	width: 270px;
+	height: 180px;
+	margin-right: 50px;
+	margin-top: 50px;
+}
+
+div#menu ul li div.text {
+	padding: 10px;
+	background: #d32929;
+}
+
+div#menu ul li p {
+	font-size: 12px;
+	color: white;
+}
+
+div#menu ul li p.title {
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+}
+
+
+a.feature01 {
+	position: relative;
+	float: left;
+	display: block;
+	text-decoration: none;
+	cursor: default;
+}
+
+a.feature01:hover { border-color: #000; }
+ 
+	a.feature01:hover .overlay01
+	{
+		position: absolute;
+		z-index: 3;
+		width: 270px;
+		height: 180px;
+		background: rgb(203,0,0);
+		/* for browsers that know rgba */
+		background: rgba(203, 0, 0, 0.90);
+	}
+		a.feature01 .overlay01 .caption01
+		{
+			position: absolute;
+			height: 165px;
+			top: 15px;
+			line-height: 80px;
+			width: 100%;
+			z-index: 3;
+			left: -9999px;
+			color: white;
+			font-family: "LumpyRegular", "Verdana", sans-serif;
+			font-size: 40px;
+			text-align: center;
+			overflow: hidden;
+		}
+		a.feature01:hover .caption01
+		{
+			left: 0px;
+			
+		}
+		a.feature01 img { display: block; }
+
+
+/***************** ABOUT ********************/
+
+div#about {
+	width: 750px;
+	margin: 0 auto 0;
+}
+
+div#about p {
+	font-size: 14px;
+	margin-bottom:18px;
+	text-align: justify;
+}
+
+div#about img.left {
+	float: left;
+	margin-right: 14px;
+	margin-bottom: 10px;
+}
+
+div#about img.right {
+	float: right;
+	margin-left: 14px;
+	margin-bottom: 10px;
+}
+
+
+/***************** CONTACT ********************/
+
+div.contact ul {
+	position: relative;
+	margin: 0 auto 0;
+	width: 800px;
+	left: 50px;
+}
+
+div.contact ul li {
+	position: relative;
+	float: left;
+	width: 400px;
+}
+
+div.contact img {
+	position: relative;
+	float: left;
+	margin-right: 12px;
+}
+
+div.contact p.name {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+/***************** FOOTER ********************/
+
+div#footer {
+	position: relative;
+	margin: 40px auto 15px;
+	height: 46px;
+	width: 100%;
+	/*border: solid 1px blue;*/
+}
+
+div#footer p {
+	position: relative;
+	text-align: center;
+	font-size: 11px;
+}
+
+div#footer p a{color: #444;}
