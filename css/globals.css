@@ -54,12 +54,13 @@ div#header {
 	
 	font-family: "ZapfHumnstBTBold", "Verdana", sans-serif;
 	font-size: 14px;
-	height: 46px;
+	height: 38px;
 	padding-left: 35px;
 	padding-right: 35px;
 	
 	line-height: 38px;
 	color: white;
+	top: -10px;
 }
 
 #header ul#nav li:hover {
@@ -71,11 +72,15 @@ div#header {
 	color: inherit;
 }
 
+#header ul#nav li #fb-like {
+	top: 6px;
+}
+
 /*Active Navigation Links Based on Body ID*/
 body#market li#market a {font-size: 18px; color: white;}
 body#catering li#catering a {font-size: 18px; color: white;}	
 body#about li#about a {font-size: 18px; color: white;}
-body#contact li#contact a {font-size: 18px; color: white;}				
+body#contact li#contact a {font-size: 18px; color: white;}			
 
 
 /***************** CONTENT ********************/
